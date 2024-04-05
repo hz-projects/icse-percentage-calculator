@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specify the primary language of your document -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSE 10 Percentage Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="description" content="Calculate your ICSE 10th grade percentage with our user-friendly calculator.">
+    <meta property="og:title" content="ICSE 10 Percentage Calculator">
+    <meta property="og:description"
+        content="Calculate your ICSE 10th grade percentage with our user-friendly calculator.">
+    <meta property="og:image" content="https://example.com/icse-calculator.jpg">
+    <meta property="og:url" content="https://example.com/icse-calculator">
+    <meta name="twitter:title" content="ICSE 10 Percentage Calculator">
+    <meta name="twitter:description"
+        content="Calculate your ICSE 10th grade percentage with our user-friendly calculator.">
+    <meta name="twitter:image" content="https://example.com/icse-calculator.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ICSE Class 10<sup>th</sup> Percentage Calculator</h1>
+        <hr>
+        <h4 style="color: #000; text-align: left">If you have not Downloaded Your ICSE Class 10 Result, then Download it from <a href="https://cisce.org/" target="_blank"
+            rel="noopener noreferrer">here.</a></h4>
+
+
+            <hr>
+            <h3>Enter your Pecentage Marks below</h3>
+            <hr style="border-top: 1px dotted black;"><br>
+        <form id="percentageCalculator">
+            <div class="form-group">
+                <label for="english"><b>English (Literature + Language) &#10509;</b></label>
+                <input type="number" id="english" name="english" min="0" max="100" placeholder="Enter your Marks"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="hindi"><b>Hindi &#10509;</b></label>
+                <input type="number" id="hindi" name="hindi" min="0" max="100" placeholder="Enter your Marks" required>
+            </div>
+            <div class="form-group">
+                <label for="socialStudies"><b>Social Studies (History & Civics + Geography) &#10509;</b></label>
+                <input type="number" id="socialStudies" name="socialStudies" min="0" max="100"
+                    placeholder="Enter your Marks" required>
+            </div>
+            <div class="form-group">
+                <label for="math"><b>Mathematics &#10509;</b></label>
+                <input type="number" id="math" name="math" min="0" max="100" placeholder="Enter your Marks" required>
+            </div>
+            <div class="form-group">
+                <label for="science"><b>Science (Physics + Chemistry + Biology) &#10509;</b></label>
+                <input type="number" id="science" name="science" min="0" max="100" placeholder="Enter your Marks"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="computer"><b>Computer &#10509;</b></label>
+                <input type="number" id="computer" name="computer" min="0" max="100" placeholder="Enter your Marks"
+                    required>
+            </div>
+            <input type="submit" value="Calculate Percentage">
+        </form>
+        <div id="result" class="result"></div>
+        <h2 class="share-heading">Share with your Friends &#x1F91D;</h2>
+        <button id="copyLinkBtn" class="btn-copy">Copy Website Link</button>
+        <button id="copyResultBtn" class="btn-copy">Copy Result</button>
+        <footer class="footer">
+            <p>&copy; 2024 ICSE 10 Percentage Calculator
+                . All rights reserved.</p>
+
+            <ul>
+                <li><a href="./pages/disclaimer.html">| Disclaimer |</a></li>
+                <li><a href="./pages/privacy.html"> | Privacy Policy |</a></li>
+                <li><a href="./pages/copyright.html"> | Copyright |</a></li>
+                <li><a href="./pages/contact.html"> | Contact | </a></li>
+            </ul>
+
+            <p>| Made By Hz &#10084; |</p>
+
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
