@@ -74,7 +74,7 @@ form.addEventListener("submit", function (e) {
     function copyResult() {
         const url = window.location.href;
 
-        const message = `CICSE Class 10th Result\n\nName: ${name}\nGrade: ${grade}\nPercentage: ${percentage.toFixed(2)}%\n\nSubjects\t\t\tMarks\n\nEnglish (Lit+Lang)\t\t${english}\nHindi\t\t\t\t${hindi}\nSocial Science (His&Civics+Geo)\t${socialStudies}\nMathematics\t\t\t${math}\nScience (Phy+Che+Bio)\t\t${science}\nComputer\t\t\t${computer}\n\nWebsite : ${url}`;
+        const message = `CICSE Class 10th Result\n\nName: ${name}\nGrade: ${grade}\nPercentage: ${percentage.toFixed(2)}%\n\nSubjects\t\t\tMarks\n\nEnglish (Lit+Lang)-->\t\t${english}\nHindi-->\t\t${hindi}\nSocial Science (His&Civics+Geo)-->\t${socialStudies}\nMathematics-->\t\t${math}\nScience (Phy+Che+Bio)-->\t\t${science}\nComputer-->\t\t${computer}\n\nWebsite : ${url}`;
 
 
         navigator.clipboard.writeText(message);
