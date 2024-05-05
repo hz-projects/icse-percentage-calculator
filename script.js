@@ -18,18 +18,38 @@ form.addEventListener("submit", function (e) {
         return;
     }
 
-    const english = parseFloat(form.english.value);
-    const hindi = parseFloat(form.hindi.value);
-    const socialStudies = parseFloat(form.socialStudies.value);
-    const math = parseFloat(form.math.value);
-    const science = parseFloat(form.science.value);
-    const computer = parseFloat(form.computer.value);
+    // const english = parseFloat(form.english.value);
+    // const hindi = parseFloat(form.hindi.value);
+    // const socialStudies = parseFloat(form.socialStudies.value);
+    // const math = parseFloat(form.math.value);
+    // const science = parseFloat(form.science.value);
+    // const computer = parseFloat(form.computer.value);
 
-    // Exclude the lowest score out of the 6 subjects
-    const subjects = [english, hindi, socialStudies, math, science, computer];
-    const lowestScore = Math.min(...subjects);
-    const totalTop5 = subjects.reduce((acc, val) => acc + val, 0) - lowestScore;
-    const percentage = (totalTop5 / 500) * 100;
+    // // Exclude the lowest score out of the 6 subjects
+    // const subjects = [english, hindi, socialStudies, math, science, computer];
+    // const lowestScore = Math.min(...subjects);
+    // const totalTop5 = subjects.reduce((acc, val) => acc + val, 0) - lowestScore;
+    // const percentage = (totalTop5 / 500) * 100;
+// Subjects scores
+const english = parseFloat(form.english.value);  // English score
+const hindi = parseFloat(form.hindi.value);
+const socialStudies = parseFloat(form.socialStudies.value);
+const math = parseFloat(form.math.value);
+const science = parseFloat(form.science.value);
+const computer = parseFloat(form.computer.value);
+
+// Array of non-English subjects
+const otherSubjects = [hindi, socialStudies, math, science, computer];
+
+// Finding the lowest score among non-English subjects
+const lowestNonEnglishScore = Math.min(...otherSubjects);
+
+// Calculating total of the top 5 scores (English + 4 highest scores from other subjects)
+const totalTop5 = english + otherSubjects.reduce((acc, val) => acc + val, 0) - lowestNonEnglishScore;
+
+// Calculating percentage
+const percentage = (totalTop5 / 500) * 100;
+
 
     let grade = "";
     if (percentage >= 90) {
