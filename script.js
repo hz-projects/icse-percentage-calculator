@@ -85,7 +85,7 @@ const percentage = (totalTop5 / 500) * 100;
     function copyLink() {
         const url = window.location.href;
         const message = `Discover your ICSE 10th grade percentage, share your success, and celebrate your achievements with friends!\n`;
-        const textToCopy = `${message}\nTry now! ${url}`;
+        const textToCopy = `${message}\nTry now! https://hz-projects.github.io/icse-percentage-calculator`;
         navigator.clipboard.writeText(textToCopy);
         alert("Click Ok to Copy!");
     }
@@ -94,7 +94,7 @@ const percentage = (totalTop5 / 500) * 100;
     function copyResult() {
         const url = window.location.href;
 
-        const message = `CICSE Class 10th Result\n\nName: ${name}\nGrade: ${grade}\nPercentage: ${percentage.toFixed(2)}%\n\nSubjects\t\t\tMarks\n\nEnglish (Lit+Lang)-->\t\t${english}\nHindi-->\t\t${hindi}\nSocial Science (His&Civics+Geo)-->\t${socialStudies}\nMathematics-->\t\t${math}\nScience (Phy+Che+Bio)-->\t\t${science}\nComputer-->\t\t${computer}\n\nWebsite : ${url}`;
+        const message = `CICSE Class 10th Result\n\nName: ${name}\nGrade: ${grade}\nPercentage: ${percentage.toFixed(2)}%\n\nSubjects\t\t\tMarks\n\nEnglish (Lit+Lang)-->\t\t${english}\nHindi-->\t\t${hindi}\nSocial Science (His&Civics+Geo)-->\t${socialStudies}\nMathematics-->\t\t${math}\nScience (Phy+Che+Bio)-->\t\t${science}\nComputer-->\t\t${computer}\n\nWebsite : https://hz-projects.github.io/icse-percentage-calculator`;
 
 
         navigator.clipboard.writeText(message);
